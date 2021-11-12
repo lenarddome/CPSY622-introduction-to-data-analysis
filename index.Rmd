@@ -1,0 +1,82 @@
+---
+title: "Introduction to the World of Quantitive Research Methods with R"
+author: "Lenard Dome"
+date: "`r format(Sys.time(), '%b %d, %Y')`"
+output:
+  revealjs::revealjs_presentation:
+    self_contained: true
+    center: false
+    theme: night
+    highlight: zenburn
+    transition: none
+    reveal_options:
+      controls: true
+      height: "100%"
+      margin: 0.04
+      slideNumber: "c/t"
+      previewLinks: true
+---
+
+```{r, include = FALSE}
+require(emo)
+```
+
+## Contacts
+
+`r emo::ji("email")` lenard.dome@plymouth.ac.uk
+
+
+<!-- style -->
+
+<style>
+
+body {
+  background: #2e3440;
+  margin-top: 10%;
+}
+
+h1.title {
+  color: #a3be8c;
+}
+
+h1.subtitle {
+  font-size: 42px;
+}
+
+.container{
+    display: flex;
+}
+
+.col{
+    flex: 1;
+}
+
+div.sourceCode {
+  background-color: #2e3440;
+}
+
+.sourceCode {
+  background-color: #393f4b;
+}
+
+.reveal section img {
+  border: 30px solid #e0e1e2;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.reveal p {
+  text-align: left;
+}
+
+.reveal ul {
+  display: block;
+}
+
+.reveal ol {
+  display: block;
+}
+
+</style>
