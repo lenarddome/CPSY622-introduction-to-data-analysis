@@ -21,7 +21,17 @@ output:
 require(emo)
 ```
 
-## Contacts
+# Quantitative Analysis in R
+
+# The Analysis Pipeline
+
+# Why R?
+
+# Reproducible Analysis
+
+# What is going to happen today?
+
+# Contacts
 
 `r emo::ji("email")` lenard.dome@plymouth.ac.uk
 
