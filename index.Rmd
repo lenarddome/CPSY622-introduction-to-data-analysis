@@ -172,8 +172,7 @@ class: top left inverse
 
 
 * `r emo::ji("chart")` Slides are availabe at [lenarddome.github.io/teaching](https://lenarddome.github.io/teaching/)
-* `r emo::ji("notebook")` All other material, including notes, can be found on
-  [GitHub](https://github.com/lenarddome/tmu002-dclin-statistics)
+* `r emo::ji("notebook")` All other material, including notes, can be found on [GitHub `r fontawesome::fa("github")`](https://github.com/lenarddome/dclin-stats)
 
 <!-- style -->
 
