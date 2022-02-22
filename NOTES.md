@@ -2,10 +2,10 @@
 
 ## General Notes
 
-Most site includes footnotes, where I added a lot of interesting resources that helps you dive deep into the topics the slides focus on.
+Most slides includes footnotes, where I added a lot of interesting resources that helps you dive deep into the topics the slides focus on.
 I know that many of us are very busy.
 I certainly have very little time to read things that are not directly related to my research.
-If I can, I always search Youtube first and google scholar second, so I included resources like video lectures, conference presentations, vlogs.
+If I can, I always search Youtube first and google scholar second, so I tried to mostly included resources like video lectures, conference presentations, vlogs.
 The links on the slides are coloured blue, they are clickable.
 
 ## Quantitative Research
@@ -92,12 +92,63 @@ This also comes with a change in how you approach data analysis.
 
 ## Why R?
 
+There are some very clear, maybe not necessarily research-related, advantages of using R.
+
+One is that it is completely free to use.
+You can download it and install it on your machine anywhere in the world with an internet connection.
+
+The second is related to how you document your data analysis.
+If you are using R, you can save everything that you have done.
+This includes everything from the opening the unprocessed data to having a number to tell you whether what you see in the data is reliable.
+
+The third is maybe the most important thing.
+Open Source means that R is not a black box.
+You can see inside the machine.
+In my experience, different software tend to calculate the same thing differently.
+Even simple measures have multiple slightly different formulas, which can be a problem when you are trying to replicate the analysis.
+
+The last advantage relates to data pre-processing.
+Pre-processing is when you put the data into a shape that can be then fed into a formula of calculating some statistics.
+R is great at pre-processing.
 
 ## The Analysis Pipeline
 
-R pushes you to reason from data.
+On the other hand, the biggest advantage of R in terms of education is that **R pushes you to reason from data.**
+
+I repeat it a lot so let me say it again.
+The published paper is only a summary of what you have done, only an approximation of what you have done.
+
+Now, R uses something called script - which are plain text files.
+In these scripts, you can store every single analysis step you took to arrive at the conclusion.
+This is a bit more advanced, but you can also include the ways you calculated certain statistics.
+So if there is a change or update in the software, you will still have the techniques you used available to you.
+
+R scripts also allow others to run your analysis.
+R scripts have good records of the analysis steps, so others can actually run your analysis and get the same results.
+The findings don't depend on the person running the analysis anymore.
 
 ## Today's schedule
+
+So, we only have one single item of our agenda left.
+Familiarising ourselves with how to do quantitative research by means of R.
+The worksheet you will go through is a big chunk of work and not all of you will finish.
+This is not a problem, because the goal is for you do start doing the analysis part of quantitative research.
+The worksheet will walk you through each step of the analysis.
+This means that you start at importing your data and finish at having a single number telling you if there was a difference.
+
+
+I would only make two suggestions:
+
+1. Don't look at it as an R workshop.
+Look at it as a quantitative workshop.
+Statistics and R are tools of reasoning with data.
+Think of today as a practice on how to reason data instead of learning R.
+Be problem-oriented instead of tool-oriented.
+2. This is training, so you don't have to get things right.
+If you stuck, let me know.
+I am here to help you get unstuck.
+There seems to be a tendency of people not asking for help but trying to figure things out.
+It is okay to try, but there is no better place to ask for help than now.
 
 ## References
 
