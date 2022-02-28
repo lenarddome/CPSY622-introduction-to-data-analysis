@@ -15,18 +15,18 @@ There are myriads of radically different way to carry out research.
 From the traditional, mainstream psychologists perspective, there is a well-tried formula on how you should go about it.
 Its goal is simply to test explanations of behaviour - this goal is to narrow down the vast number of explanations you can come up with to explain human behaviour.
 
-In order to do this, you are required to reliable conclude from the data (observations) you have.
-This is where statistics come in.
+In order to do this, you are required to reliably conclude from the data (observations) you have.
+This is where statistics and R come in.
 While human reasoning is powerful, it is influenced by human biases, very limited cognitive capacity, and also by simple tiredness.
 It is actually very hard to evaluate evidence without pre-existing beliefs.
 
 For example, there is a thing called belief bias effect (Evans, Barston & Pollard, 1983).
 They gave evidence suggesting that people's intuition about the conclusion (that is to say, the believability of the conclusion) swayed people's judgements - regardless of whether the conclusion was correct or not.
-If are interested in cases like that, you can also look up Simpson's Paradox.
+If you are interested in cases like that, you can also look up Simpson's Paradox.
 
 Statistics is a way to remove the researcher from the results.
 The goal is to have a conclusion that will not depend on the people making the conclusion.
-But where does it fit into the process?
+So where does it fit into the process?
 
 The general outlook for a traditional psychology experiment is this:
 
@@ -50,12 +50,12 @@ Before we move on to the way we do analysis, I wanted to give some context on wh
 
 Before a few years back, it was relatively rare to see experiments being replicated in the literature.
 Now this is a problem, because observing something once is not a reliable observation.
-There are people who advocate for running only one participant, or doing a single case study, which could be fine under some conditions.
+There are people who advocate for running only one participant, or doing only a single case study, which could be fine under some conditions.
 We don't discuss that today.
 
 Let's think about a somewhat unreal example.
 If you see a flying cow while walking on the shores of Devon, you will not believe it.
-You might believe that you have some sort of auditory/visual illusions.
+You might believe that you have some sort of auditory/visual illusion.
 Now imagine that you start seeing more and more flying cows hovering over the sea.
 Imagine that more and more people are gathering to try and make sense of this unbelievable phenomenon.
 In this scenario, you will at least start believing that the cows are really flying.
