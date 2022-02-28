@@ -37,7 +37,7 @@ Step 1 and step 2 are actually referred to as operationalising: connect the thin
 3. Then we look at the measurements we made to check whether what we believed should happen given we were correct actually happened.
 If we were correct, we are happy and design another experiment.
 If we were incorrect, we adjust our understanding and design another experiment.
-Or if you are very stubborn, you say you were right, but for reasons other than what you hypothesised -  don't do that, it is called hypothesising after results are known [HARKING](https://pubmed.ncbi.nlm.nih.gov/15647155/).
+Sometimes people come up with hypothesis that is in line with their analysis, after they have already ran their analysis -  don't do that, it is called hypothesising after results are known [HARKING](https://pubmed.ncbi.nlm.nih.gov/15647155/).
 
 Statistics and R comes in in step 3. In step 3, you reason from data to confirm whether the observations you made are actually in line with your hypothesis.
 An even simpler test is whether the trend in the data is actually a reliable trend or just simply noise.
