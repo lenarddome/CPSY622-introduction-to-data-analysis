@@ -1,235 +1,81 @@
----
-title: "Introduction to the World of Quantitive Research with R"
-author: "Lenard Dome"
-date: "`r format(Sys.time(), '%b %d, %Y')`"
-output:
-  xaringan::moon_reader:
-    css: ["libs/default.css", "libs/default-fonts.css"]
-    seal: true 
-    self_contained: false
-    nature:
-      ratio: "21:11"
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
+--- 
+title: 'Introduction to Data Analysis'
+author: 'Lenard Dome'
+date: '`r Sys.Date()`'
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: krantz
+font_scale: 0.1
+bibliography: biblio.bib
+biblio-style: apalike
+link-citations: yes
+colorlinks: yes
+graphics: yes
+cover-image: cover.jpg
+description: 'This brief worksheet introduces you to reasoning from and with data through a series of hands-on workshops.'
 ---
 
+<style>
+
+figure {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+}
+
+
+</style>
 
 ```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
 library(emo)
 library(fontawesome)
+is_on_ghactions <- identical(Sys.getenv("GITHUB_ACTIONS"), "true")
+is_online <- curl::has_internet()
+is_html <- knitr::is_html_output()
+options(out.width = 400)
 ```
 
-class: middle left inverse
+# Welcome {-}
+
+ [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+This is a brief introduction to data analysis for the regular psychologists.
+The book is designed to give you a rough overview on various techniques that we use to argue with data.
+
+<br>
+
+<center>
+<img src="cover.jpg" width="400" alt="The book cover" align="middle" /></a>
+</center>
+
+<center>
+*Cover Photo by <a href="https://unsplash.com/@ralphkayden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ralph (Ravi) Kayden</a> on <a href="https://unsplash.com/s/photos/server-cables?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*
+</center>
+
+<br>
+
+Here we just introduce you to things and explain the idea.
+
+# Foreword {-}
 
 1. Quick Introduction (30 min)
 2. Follow on worksheets (approx. 2 hours)
 3. Take a Break (30 mins)
 4. Continue with worksheets (approx. 1 hour)
 
----
+# Structure {-}
 
-class: top left inverse
+This book intends to start with the some historical background and definition of terms (Chapter 1 - 4).
+Then it introduces the ideas behind how we approach data (Chapter 4 - 8) and also spends some time with how to plan the analysis (Chapter 9 - 12).
+Following this, the book introduces a set of run-of-the-mill statistical techniques to (Chapter 13 - 19).
+The walkthrough ends with some acessible introduction to more advanced techniques (Chapter 20 - 24).
 
-# Quantitative Research
+Each practical section will begin by describing a problem that we aim to solve by means of the technique we learn about.
 
-> One of the many goals of quantitative methods is to make reliable conclusions from the observations you make. 
-
-<br><br>
-
-* Hypothesis: Given condition X, we will see people do Y. 
-* Measurement: Make observations under condition X.
-* **Test: Did we observe people do Y? (Today's focus)**
-
-.footnote[
-
-.bold[*] Andy Wills: Science, Truth, Honesty [slides](https://www.andywills.info/critical-thinking/ScienceTruthHonestyInteract.pdf) [notes](https://www.andywills.info/critical-thinking/ScienceTruthHonestyNotesInteract.html) [course](https://www.andywills.info/critical-thinking/#ct-lectures)
-
-.bold[*] Todd Gureckis: Why do we learn statistics? [video](https://vimeo.com/508505679) [chapter](http://gureckislab.org/courses/spring21/labincp/chapters/01/00-whystats.html#video-lecture)
-
-]
-
----
-
-class: top left inverse
-
-# Quantitative Backlash
-
-
-
-.pull-left[
-
-* Reproducibility Crisis
-
-![](./assets/replication-crisis.png)
-
-[Open Science Collaboration (2015)](https://doi.org/10.1126/science.aac4716)
-
-]
-
-.pull-right[
-
-#### Some Causes we can fix by changing how we do  and document our analysis
-
-1. Misunderstanding of statistics
-2. Low reproducibility (experiments, **analysis**)
-3. Poor records
-4. Not sharing data openly
-
-]
-
-.footnote[
-
-.bold[*] Andy Wills: Fix the replication Crisis [video](https://www.youtube.com/watch?v=_OqiTVq12Pk)
-
-.bold[*] David Shanks: The replication crisis in psychology [video](https://www.youtube.com/watch?v=Zz627CecmgU)
-
-.bold[*] David Shanks: Does social science tell the truth? [video](https://www.youtube.com/watch?v=Jt7gEAoUl8s)
-
-.bold[*] Priya Silverstein: Easing into open science [video](https://www.youtube.com/watch?v=owJaD3UiseQ)
-
-]
-
----
-
-class: top left inverse
-
-# Why R?
-
-* Free as in Freedom
-
-> Costs £0.
-
-* Documents your analysis
-
-> Any conclusion people make from data should stand independent of the person making
-> the conclusion.
-
-* Open Source
-
-> If you do the same tests on the same data, but get a different result, the
-> difference must be about how the test was programmed.
-
-* Data preprocessing
-
-> 80% of time is spent on data preprocessing, see
-> [article](https://www.forbes.com/sites/gilpress/2016/03/23/data-preparation-most-time-consuming-least-enjoyable-data-science-task-survey-says/#5e7ed02f6f63).
-> R is superb at preprocessing, saving a large amount of time - especially for
-> multiple projects.
-
-.footnote[
-
-.bold[*] Danielle Navarro: R for Psychological Science? [video](https://www.youtube.com/watch?v=xFkEbYk0C0Q)
-
-]
-
----
-
-class: top left inverse
-
-# The Analysis Pipeline
-
-<br><br>
-
-**The published paper is only a summary of what you have done, it is not the perfect
-record of how you arrived at a certain statistical conclusion.**
-
-Using R allows you to complement your paper. It will let you:
-
-* records every analysis step.
-* inspect the way the results are calculated.
-* reproduce analysis and let others reproduce yours.
-
-.footnote[
-
-.bold[*] [Some reasons to use R](https://www.andywills.info/rminr/why-r-student.html)
-
-]
-
----
-
-class: top left inverse
-
-# What is going to happen today?
-
-<br><br>
-
-**Complete a worksheet**
-
-* Start from importing the raw data for analysis
-* End by having a single reliable conclusion about your data
-
-[Click on me for the introductory worksheets!](https://www.andywills.info/rminr/#vbgtr)
-
-If you completed the Very Brief Guide to R worksheets, there is a few things you should look at:
-
-1. [Statistical Power](https://www.andywills.info/rminr/power.html): power is a very important concept, that is concerned with getting enough evidence to support your conclusions.
-2. [Putting R to Work](https://www.andywills.info/rminr/#rtowork): this is a collection of worksheets designed to be an easy-going introduction to R with real-life data sets.
-
----
-
-class: top left inverse
-
-# Contacts
+# Contacts {-}
 
 `r emo::ji("email")` lenard.dome@plymouth.ac.uk
 
 
 * `r emo::ji("chart")` Slides are availabe at [lenarddome.github.io/teaching](https://lenarddome.github.io/teaching/)
 * `r emo::ji("notebook")` All other material, including notes, can be found on [GitHub `r fontawesome::fa("github")`](https://github.com/lenarddome/dclin-stats)
-
-<!-- style -->
-
-<style>
-
-body {
-  background: #2e3440;
-  margin-top: 10%;
-}
-
-h1.title {
-  color: #a3be8c;
-}
-
-h1.subtitle {
-  font-size: 42px;
-}
-
-.container{
-    display: flex;
-}
-
-.col{
-    flex: 1;
-}
-
-div.sourceCode {
-  background-color: #2e3440;
-}
-
-.sourceCode {
-  background-color: #393f4b;
-}
-
-.reveal section img {
-  border: 30px solid #e0e1e2;
-  border-radius: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  }
-
-.reveal p {
-  text-align: left;
-}
-
-.reveal ul {
-  display: block;
-}
-
-.reveal ol {
-  display: block;
-}
-
-</style>

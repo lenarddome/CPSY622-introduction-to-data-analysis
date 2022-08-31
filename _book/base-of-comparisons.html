@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>14 Base of Comparisons | Introduction to Data Analysis</title>
+  <meta name="description" content="This brief worksheet introduces you to reasoning from and with data through a series of hands-on workshops." />
+  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="14 Base of Comparisons | Introduction to Data Analysis" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="/cover.jpg" />
+  <meta property="og:description" content="This brief worksheet introduces you to reasoning from and with data through a series of hands-on workshops." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="14 Base of Comparisons | Introduction to Data Analysis" />
+  
+  <meta name="twitter:description" content="This brief worksheet introduces you to reasoning from and with data through a series of hands-on workshops." />
+  <meta name="twitter:image" content="/cover.jpg" />
+
+<meta name="author" content="Lenard Dome" />
+
+
+<meta name="date" content="2022-08-31" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="evidence.html"/>
+<link rel="next" href="power.html"/>
+<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block/empty-anchor.js"></script>
+<link href="libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections/anchor-sections.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
+<li class="chapter" data-level="" data-path="foreword.html"><a href="foreword.html"><i class="fa fa-check"></i>Foreword</a></li>
+<li class="chapter" data-level="" data-path="structure.html"><a href="structure.html"><i class="fa fa-check"></i>Structure</a></li>
+<li class="chapter" data-level="" data-path="contacts.html"><a href="contacts.html"><i class="fa fa-check"></i>Contacts</a></li>
+<li class="part"><span><b>I Foundations</b></span></li>
+<li class="chapter" data-level="1" data-path="quantitative-research.html"><a href="quantitative-research.html"><i class="fa fa-check"></i><b>1</b> Quantitative Research</a></li>
+<li class="chapter" data-level="2" data-path="reproducibility-backlash.html"><a href="reproducibility-backlash.html"><i class="fa fa-check"></i><b>2</b> Reproducibility Backlash</a></li>
+<li class="chapter" data-level="3" data-path="open-science.html"><a href="open-science.html"><i class="fa fa-check"></i><b>3</b> Open Science</a></li>
+<li class="chapter" data-level="4" data-path="why-r.html"><a href="why-r.html"><i class="fa fa-check"></i><b>4</b> Why R?</a></li>
+<li class="part"><span><b>II Design</b></span></li>
+<li class="chapter" data-level="5" data-path="project-design.html"><a href="project-design.html"><i class="fa fa-check"></i><b>5</b> Project Design</a></li>
+<li class="chapter" data-level="6" data-path="analysis-pipeline.html"><a href="analysis-pipeline.html"><i class="fa fa-check"></i><b>6</b> Analysis Pipeline</a></li>
+<li class="chapter" data-level="7" data-path="reproducibility.html"><a href="reproducibility.html"><i class="fa fa-check"></i><b>7</b> Reproducibility</a></li>
+<li class="chapter" data-level="8" data-path="archives.html"><a href="archives.html"><i class="fa fa-check"></i><b>8</b> Archives</a></li>
+<li class="part"><span><b>III Explorations</b></span></li>
+<li class="chapter" data-level="9" data-path="preprocessing.html"><a href="preprocessing.html"><i class="fa fa-check"></i><b>9</b> Preprocessing</a></li>
+<li class="chapter" data-level="10" data-path="exploring-data.html"><a href="exploring-data.html"><i class="fa fa-check"></i><b>10</b> Exploring Data</a></li>
+<li class="chapter" data-level="11" data-path="understanding-data.html"><a href="understanding-data.html"><i class="fa fa-check"></i><b>11</b> Understanding Data</a></li>
+<li class="chapter" data-level="12" data-path="looking-at-differences.html"><a href="looking-at-differences.html"><i class="fa fa-check"></i><b>12</b> Looking at differences</a></li>
+<li class="part"><span><b>IV Analysis</b></span></li>
+<li class="chapter" data-level="13" data-path="evidence.html"><a href="evidence.html"><i class="fa fa-check"></i><b>13</b> Evidence</a></li>
+<li class="chapter" data-level="14" data-path="base-of-comparisons.html"><a href="base-of-comparisons.html"><i class="fa fa-check"></i><b>14</b> Base of Comparisons</a></li>
+<li class="chapter" data-level="15" data-path="power.html"><a href="power.html"><i class="fa fa-check"></i><b>15</b> Power</a></li>
+<li class="chapter" data-level="16" data-path="between-groups.html"><a href="between-groups.html"><i class="fa fa-check"></i><b>16</b> Between Groups</a></li>
+<li class="chapter" data-level="17" data-path="within-groups.html"><a href="within-groups.html"><i class="fa fa-check"></i><b>17</b> Within Groups</a></li>
+<li class="chapter" data-level="18" data-path="categorical-data.html"><a href="categorical-data.html"><i class="fa fa-check"></i><b>18</b> Categorical Data</a></li>
+<li class="chapter" data-level="19" data-path="linear-models.html"><a href="linear-models.html"><i class="fa fa-check"></i><b>19</b> Linear Models</a></li>
+<li class="part"><span><b>V Advanced Techniques</b></span></li>
+<li class="chapter" data-level="20" data-path="supervised-clustering.html"><a href="supervised-clustering.html"><i class="fa fa-check"></i><b>20</b> Supervised Clustering</a></li>
+<li class="chapter" data-level="21" data-path="unsupervised-clustering.html"><a href="unsupervised-clustering.html"><i class="fa fa-check"></i><b>21</b> Unsupervised Clustering</a></li>
+<li class="chapter" data-level="22" data-path="bayesian-power-estimation.html"><a href="bayesian-power-estimation.html"><i class="fa fa-check"></i><b>22</b> Bayesian Power Estimation</a></li>
+<li class="chapter" data-level="23" data-path="bayesian-parameter-estimation.html"><a href="bayesian-parameter-estimation.html"><i class="fa fa-check"></i><b>23</b> Bayesian Parameter Estimation</a></li>
+<li class="chapter" data-level="24" data-path="model-fitting.html"><a href="model-fitting.html"><i class="fa fa-check"></i><b>24</b> Model Fitting</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introduction to Data Analysis</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="base-of-comparisons" class="section level1 hasAnchor" number="14">
+<h1><span class="header-section-number">14</span> Base of Comparisons<a href="base-of-comparisons.html#base-of-comparisons" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="evidence.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="power.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook/js/app.min.js"></script>
+<script src="libs/gitbook/js/lunr.js"></script>
+<script src="libs/gitbook/js/clipboard.min.js"></script>
+<script src="libs/gitbook/js/plugin-search.js"></script>
+<script src="libs/gitbook/js/plugin-sharing.js"></script>
+<script src="libs/gitbook/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook/js/jquery.highlight.js"></script>
+<script src="libs/gitbook/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "Roboto",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "static"
+},
+"info": true
+});
+});
+</script>
+
+</body>
+
+</html>

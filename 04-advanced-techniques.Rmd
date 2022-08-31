@@ -1,0 +1,11 @@
+# (PART) Advanced Techniques {-}
+
+# Supervised Clustering
+
+# Unsupervised Clustering
+
+# Bayesian Power Estimation
+
+# Bayesian Parameter Estimation
+
+# Model Fitting

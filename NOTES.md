@@ -11,9 +11,7 @@ The links on the slides are coloured blue, they are clickable.
 ## Quantitative Research
 
 Quantitative research is a diverse field.
-There are myriads of radically different way to carry out research.
-From the traditional, mainstream psychologists perspective, there is a well-tried formula on how you should go about it.
-Its goal is simply to test explanations of behaviour - this goal is to narrow down the vast number of explanations you can come up with to explain human behaviour.
+
 
 In order to do this, you are required to reliably conclude from the data (observations) you have.
 This is where statistics and R come in.
@@ -141,8 +139,8 @@ I would only make two suggestions:
 
 1. Don't look at it as an R workshop.
 Look at it as a quantitative workshop.
-Statistics and R are tools of reasoning with data.
-Think of today as a practice on how to reason data instead of learning R.
+Statistics and R are tools of reasoning.
+Think of today as a practice on how to reason with data instead of learning R.
 Be problem-oriented instead of tool-oriented.
 2. This is training, so you don't have to get things right.
 If you stuck, let me know.

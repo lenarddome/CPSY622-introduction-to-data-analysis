@@ -1,0 +1,15 @@
+# (PART) Analysis {-}
+
+# Evidence
+
+# Base of Comparisons
+
+# Power
+
+# Between Groups
+
+# Within Groups
+
+# Categorical Data
+
+# Linear Models
