@@ -2,6 +2,9 @@ quantitative-research
 hypothesis-given-condition-x-we-will-see-people-do-y.
 measurement-make-observations-under-condition-x.
 test-did-we-observe-people-do-y
+why-statistics
+biases-are-unavoidable
+data-has-always-more-things-to-tell-us
 reproducibility-backlash
 reproducibility-crisis
 some-causes-we-can-fix-by-changing-how-we-do-and-document-our-analysis
@@ -27,3 +30,4 @@ unsupervised-clustering
 bayesian-power-estimation
 bayesian-parameter-estimation
 model-fitting
+references

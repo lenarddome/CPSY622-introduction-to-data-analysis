@@ -2,10 +2,22 @@
 
 # Supervised Clustering
 
+TBA
+
 # Unsupervised Clustering
+
+TBA
 
 # Bayesian Power Estimation
 
+TBA
+
 # Bayesian Parameter Estimation
 
+TBA
+
 # Model Fitting
+
+TBA
+
+# References
