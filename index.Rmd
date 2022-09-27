@@ -21,7 +21,7 @@ library(emo)
 library(fontawesome)
 ```
 
-class: middle left inverse
+class: middle center inverse
 
 **13.30** Quick Introduction (30 min)
 
@@ -57,6 +57,15 @@ class: top left inverse
 
 class: top left inverse
 
+# Why statistics?
+
+While human reasoning is powerful, it is influenced by human biases, limited cognitive capacity, and also by simple tiredness.
+It is actually hard to evaluate evidence without pre-existing beliefs.
+
+---
+
+class: top left inverse
+
 # Quantitative Backlash
 
 [Open Science Collaboration (2015)](https://doi.org/10.1126/science.aac4716)
@@ -85,15 +94,52 @@ class: top left inverse
 
 ---
 
-class: top left inverse
+class: middle left inverse
 
 # Some causes we can fix by changing how we do and document our analysis
 
-1. Misunderstanding of statistics
-2. Low reproducibility (experiments, **analysis**)
-3. Poor records
-4. Not sharing data openly
 
+There are many, but we will only focus on a subset of things...
+
+---
+
+class: middle left inverse
+
+1. Misunderstanding of statistics
+> The major component of our new approach is to open up our analysis and analysis methods to others. This requires us understanding what we are doing.
+
+---
+
+class: middle left inverse
+
+1. Misunderstanding of statistics
+> The major component of our new approach is to open up our analysis and analysis methods to others. This requires us understanding what we are doing.
+2. Low reproducibility (specifically our **analysis**)
+> Openly sharing every bit of details allows researchers to inspect what we have done and discover errors or learn something new about our work.
+
+---
+
+class: middle left inverse
+
+1. Misunderstanding of statistics
+> The major component of our new approach is to open up our analysis and analysis methods to others. This requires us understanding what we are doing.
+2. Low reproducibility (specifically our **analysis**)
+> Openly sharing every bit of details allows researchers to inspect what we have done and discover errors or learn something new about our work.
+3. Poor records
+> Archiving is one of the most important part of research. We need to record what we have done so people can build on transparent foundations.
+
+---
+
+class: middle left inverse
+
+1. Misunderstanding of statistics
+> The major component of our new approach is to open up our analysis and analysis methods to others. This requires us understanding what we are doing.
+2. Low reproducibility (specifically our **analysis**)
+> Openly sharing every bit of details allows researchers to inspect what we have done and discover errors or learn something new about our work.
+3. Poor records
+> Archiving is one of the most important part of research. We need to record what we have done so people can build on transparent foundations.
+4. Not sharing data openly
+> Sharing data is the hallmark of research. Also remember that majority of research is funded by regular tax-paying people.
 
 ---
 
@@ -134,7 +180,12 @@ class: top left inverse
 
 # The Analysis Pipeline
 
-<br><br>
+Today, we will go through a very rough and elementary model of analysis:
+
+* Start from importing the raw data for analysis
+* Continue by exploring the data
+* Keep on going by studying properties of the data
+* End by having a single reliable conclusion about your data
 
 **The published paper is only a summary of what you have done, it is not the perfect
 record of how you arrived at a certain statistical conclusion.**
@@ -159,14 +210,10 @@ class: top left inverse
 
 <br><br>
 
-**Complete a worksheet**
-
-* Start from importing the raw data for analysis
-* End by having a single reliable conclusion about your data
+**Complete a worksheets!!**
 
 Here are the worksheets in the order you should go through them.
 They are part of [RMINR](https://www.andywills.info/rminr/#vbgtr), that has been developed at the University of Plymouth as an in-house teaching material.
-
 
 * [Using RStudio](https://www.andywills.info/rminr/using_rstudio.html): Brief introduction to the software
 * [Exploring data](https://www.andywills.info/rminr/vbg_explore.html): Loading data, calculating means

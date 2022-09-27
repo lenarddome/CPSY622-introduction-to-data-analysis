@@ -24,7 +24,7 @@ For example, there is a thing called belief bias effect (Evans, Barston & Pollar
 They gave evidence suggesting that people's intuition about the conclusion (that is to say, the believability of the conclusion) swayed people's judgements - regardless of whether the conclusion was correct or not.
 If you are interested in cases like that, you can also look up Simpson's Paradox.
 
-Statistics is a way to remove the researcher from the results.
+Statistics is a way to remove the researcher POV from the results.
 The goal is to have a conclusion that will not depend on the people making the conclusion.
 So where does it fit into the process?
 
@@ -39,7 +39,7 @@ If we were correct, we are happy and design another experiment.
 If we were incorrect, we adjust our understanding and design another experiment.
 Sometimes people come up with hypothesis that is in line with their analysis, after they have already ran their analysis -  don't do that, it is called hypothesising after results are known [HARKING](https://pubmed.ncbi.nlm.nih.gov/15647155/).
 
-Statistics and R comes in in step 3. In step 3, you reason from data to confirm whether the observations you made are actually in line with your hypothesis.
+Statistics and R comes in step 3. In step 3, you reason from data to confirm whether the observations you made are actually in line with your hypothesis.
 An even simpler test is whether the trend in the data is actually a reliable trend or just simply noise.
 Here you have to get from the raw and unprocessed data you have to a single sentence saying that there is support for or against the experimental hypothesis.
 It is definitely not easy, and maybe it shouldn't be.
