@@ -6,7 +6,7 @@ output:
   xaringan::moon_reader:
     css: ["libs/default.css", "libs/default-fonts.css"]
     seal: true 
-    self_contained: false
+    self_contained: true
     nature:
       ratio: "21:11"
       highlightStyle: github
@@ -23,10 +23,13 @@ library(fontawesome)
 
 class: middle left inverse
 
-1. Quick Introduction (30 min)
-2. Follow on worksheets (approx. 2 hours)
-3. Take a Break (30 mins)
-4. Continue with worksheets (approx. 1 hour)
+**13.30** Quick Introduction (30 min)
+
+**14.00** Follow on worksheets (approx. 45 minutes)
+
+**14.45** Take a break and recharge (15 mins)
+
+**15.00** Continue with worksheets (approx. 1 hour and 30 minutes)
 
 ---
 
@@ -56,28 +59,16 @@ class: top left inverse
 
 # Quantitative Backlash
 
-
-
-.pull-left[
-
-* Reproducibility Crisis
-
-![](./assets/replication-crisis.png)
-
 [Open Science Collaboration (2015)](https://doi.org/10.1126/science.aac4716)
 
-]
+|                                                                     | *p* < 0.05 |
+| ------------------------------------------------------------------- | ---------: |
+| Journal of Personality and Social Psychology                        |        23% |
+| Journal of Experimental Psychology: Learning, Memory, and Cognition |        48% |
+| Psychological Science (social)                                      |        29% |
+| Psychological Science (cognitiive)                                  |        53% |
+| Overall                                                             |        36% |
 
-.pull-right[
-
-#### Some Causes we can fix by changing how we do  and document our analysis
-
-1. Misunderstanding of statistics
-2. Low reproducibility (experiments, **analysis**)
-3. Poor records
-4. Not sharing data openly
-
-]
 
 .footnote[
 
@@ -90,6 +81,19 @@ class: top left inverse
 .bold[*] Priya Silverstein: Easing into open science [video](https://www.youtube.com/watch?v=owJaD3UiseQ)
 
 ]
+
+
+---
+
+class: top left inverse
+
+# Some causes we can fix by changing how we do and document our analysis
+
+1. Misunderstanding of statistics
+2. Low reproducibility (experiments, **analysis**)
+3. Poor records
+4. Not sharing data openly
+
 
 ---
 
@@ -137,7 +141,7 @@ record of how you arrived at a certain statistical conclusion.**
 
 Using R allows you to complement your paper. It will let you:
 
-* records every analysis step.
+* record every analysis step.
 * inspect the way the results are calculated.
 * reproduce analysis and let others reproduce yours.
 
@@ -160,12 +164,28 @@ class: top left inverse
 * Start from importing the raw data for analysis
 * End by having a single reliable conclusion about your data
 
-[Click on me for the introductory worksheets!](https://www.andywills.info/rminr/#vbgtr)
+Here are the worksheets in the order you should go through them.
+They are part of [RMINR](https://www.andywills.info/rminr/#vbgtr), that has been developed at the University of Plymouth as an in-house teaching material.
+
+
+* [Using RStudio](https://www.andywills.info/rminr/using_rstudio.html): Brief introduction to the software
+* [Exploring data](https://www.andywills.info/rminr/vbg_explore.html): Loading data, calculating means
+* [Group differences](https://www.andywills.info/rminr/vbg_groups.html): Grouping, density plots, filtering.
+* [Evidence, part 1](https://www.andywills.info/rminr/vbg_evidence.html): Bayesian and traditional t-tests
+* [Evidence, part 2](https://www.andywills.info/rminr/vbg_corr.html): Bayes and traditional correlation, scatterplot
+
+---
+
+class: top left inverse
+
+# I finished... what now?
 
 If you completed the Very Brief Guide to R worksheets, there is a few things you should look at:
 
-1. [Statistical Power](https://www.andywills.info/rminr/power.html): power is a very important concept, that is concerned with getting enough evidence to support your conclusions.
-2. [Putting R to Work](https://www.andywills.info/rminr/#rtowork): this is a collection of worksheets designed to be an easy-going introduction to R with real-life data sets.
+* [Data Management](https://www.andywills.info/rminr/data-github.html): some good introduction on good and open practices about how you should be dealing with data.
+* [Data preprocessing](https://www.andywills.info/rminr/preproc.html): De-duplicating data, excluding participants, log transform.
+* [Statistical Power](https://www.andywills.info/rminr/power.html): power is a very important concept, that is concerned with getting enough evidence to support your conclusions.
+* [Children's language development](https://www.andywills.info/rminr/cs-picture-naming-wide.html): preprocessing, Bayesian t-test, tables of descriptive statistics, correlations, half-violin plot, Wilcoxon test. 
 
 ---
 
@@ -173,11 +193,13 @@ class: top left inverse
 
 # Contacts
 
-`r emo::ji("email")` lenard.dome@plymouth.ac.uk
+If you have any questions about R, statistics, research in general, do not hesitate to contact me:
+
+`r emo::ji("man")` lenard.dome@plymouth.ac.uk
 
 
 * `r emo::ji("chart")` Slides are availabe at [lenarddome.github.io/teaching](https://lenarddome.github.io/teaching/)
-* `r emo::ji("notebook")` All other material, including notes, can be found on [GitHub `r fontawesome::fa("github")`](https://github.com/lenarddome/dclin-stats)
+* `r emo::ji("notebook")` All other material, including notes, can be found on [GitHub `r fontawesome::fa("github")`](https://github.com/lenarddome/CPSY622-introduction-to-data-analysis)
 
 <!-- style -->
 
@@ -185,7 +207,6 @@ class: top left inverse
 
 body {
   background: #2e3440;
-  margin-top: 10%;
 }
 
 h1.title {
