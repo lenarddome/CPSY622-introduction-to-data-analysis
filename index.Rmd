@@ -1,5 +1,6 @@
 ---
-title: "Introduction to the World of Quantitive Research with R"
+title: "Introduction to R Studio"
+subtitle: "Entering the World of Quantitive Research with R"
 author: "Lenard Dome"
 date: "`r format(Sys.time(), '%b %d, %Y')`"
 output:
