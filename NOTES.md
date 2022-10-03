@@ -1,4 +1,4 @@
-# NOTES
+# TEACHER'S NOTES
 
 ## General Notes
 

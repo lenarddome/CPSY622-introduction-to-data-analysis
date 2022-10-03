@@ -56,12 +56,28 @@ class: top left inverse
 
 ---
 
-class: top left inverse
+class: middle left inverse
 
 # Why statistics?
 
 While human reasoning is powerful, it is influenced by human biases, limited cognitive capacity, and also by simple tiredness.
 It is actually hard to evaluate evidence without pre-existing beliefs.
+
+---
+
+class: middle left inverse
+
+# Replicability
+
+One of the most important endeavours that science as a social enterprise can engage is to verify each other's observations through independent replications.
+The reason behind this is simple: repeated observations will increase our confidence that the effect is real.
+
+
+---
+
+class: middle left inverse
+
+# Quantitative Backlash
 
 ---
 
@@ -144,103 +160,88 @@ class: middle left inverse
 
 ---
 
-class: top left inverse
+class: middle left inverse
 
-# Why R?
-
-* Free as in Freedom
-
-> Costs £0.
+# But why do we exactly use R?
 
 .footnote[
 
 .bold[*] Danielle Navarro: R for Psychological Science? [video](https://www.youtube.com/watch?v=xFkEbYk0C0Q)
 
-]
-
----
-
-class: top left inverse
-
-# Why R?
-
-* Free as in Freedom
-
-> Costs £0.
-
-* Documents your analysis
-
-> Any conclusion people make from data should stand independent of the person making
-> the conclusion.
-
-.footnote[
-
-.bold[*] Danielle Navarro: R for Psychological Science? [video](https://www.youtube.com/watch?v=xFkEbYk0C0Q)
+.bold[*] [Some reasons to use R](https://www.andywills.info/rminr/why-r-student.html)
 
 ]
 
 ---
 
-class: top left inverse
-
-# Why R?
+class: middle left inverse
 
 * Free as in Freedom
 
 > Costs £0.
 
-* Documents your analysis
+
+---
+
+class: middle left inverse
+
+* R is Free as in Freedom
+
+> Costs £0.
+
+* R documents your analysis
 
 > Any conclusion people make from data should stand independent of the person making
 > the conclusion.
 
-* Open Source
+---
+
+class: middle left inverse
+
+* R is Free as in Freedom
+
+> Costs £0.
+
+* R documents your analysis
+
+> Any conclusion people make from data should stand independent of the person making
+> the conclusion.
+
+* R is Open Source
 
 > If you do the same tests on the same data, but get a different result, the
 > difference must be about how the test was programmed.
 
-.footnote[
-
-.bold[*] Danielle Navarro: R for Psychological Science? [video](https://www.youtube.com/watch?v=xFkEbYk0C0Q)
-
-]
 
 ---
 
-class: top left inverse
+class: middle left inverse
 
-# Why R?
-
-* Free as in Freedom
+* R is Free as in Freedom
 
 > Costs £0.
 
-* Documents your analysis
+* R Documents Your Analysis
 
 > Any conclusion people make from data should stand independent of the person making
 > the conclusion.
 
-* Open Source
+* R is Open Source
 
 > If you do the same tests on the same data, but get a different result, the
 > difference must be about how the test was programmed.
 
-* Data preprocessing
+* R is Good at Data preprocessing
 
 > 80% of time is spent on data preprocessing, see
 > [article](https://www.forbes.com/sites/gilpress/2016/03/23/data-preparation-most-time-consuming-least-enjoyable-data-science-task-survey-says/#5e7ed02f6f63).
 > R is superb at preprocessing, saving a large amount of time - especially for
 > multiple projects.
 
-.footnote[
-
-.bold[*] Danielle Navarro: R for Psychological Science? [video](https://www.youtube.com/watch?v=xFkEbYk0C0Q)
-
-]
 
 ---
 
-class: top left inverse
+class: middle left inverse
 
 # The Analysis Pipeline
 
@@ -253,7 +254,7 @@ Today, we will go through a very rough and elementary model of analysis:
 
 ---
 
-class: top left inverse
+class: middle left inverse
 
 # The Analysis Pipeline
 
@@ -267,17 +268,17 @@ Today, we will go through a very rough and elementary model of analysis:
 **The published paper is only a summary of what you have done, it is not the perfect
 record of how you arrived at a certain statistical conclusion.**
 
+---
+
+class: middle left inverse
+
+# The Open Analysis Pipeline
+
 Using R allows you to complement your paper. It will let you:
 
 * record every analysis step.
 * inspect the way the results are calculated.
 * reproduce analysis and let others reproduce yours.
-
-.footnote[
-
-.bold[*] [Some reasons to use R](https://www.andywills.info/rminr/why-r-student.html)
-
-]
 
 ---
 
